@@ -1,0 +1,56 @@
+/* Step 1: Define color variables using hex values or rgb values */
+:root { 
+    /* 1a -  a primary color */
+    /* 1b -  a secondary color */
+    /* 1c -  a text color */
+    /* 1d - the background color for the card */
+--primarycolour:rgb(0, 184, 192);
+--secondarycolour:rgb(0, 116, 228);
+--textcolour:rgb(242, 244, 251);
+--bgcolour:rgb(0, 0, 0);
+} 
+
+/* Step 2: Style the card */
+body {
+    /* set background-color to the theme primary color */
+    background-color: var(--primarycolour); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.profile-card {
+    /* 2a - add a background color using var( )  */
+    /* 2b - add a background image */
+    background-color:var(--secondarycolour) ;
+    background-image:url(blue.png);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    /* 2c - define the text color using  var( )*/
+    /* 2d - add a box shadow using rgba */ 
+     color: var(--textcolour);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+
+  }
+  
+  /* Step 3: Add styles for the image and text */
+    .avatar {
+        border-radius: 50%;
+        /*3a - set the border to 3px solid & secondary color */
+        /* border: */
+        width: 100px;
+        height: 100px;
+        border: 3px solid;
+        border-color: var(--bgcolour);
+
+    }
+
+    .bio {
+        /* 3b -  set colour to secondary color */
+        /*color:*/
+        color: var(--bgcolour);
+    }
